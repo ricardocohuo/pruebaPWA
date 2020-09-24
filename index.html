@@ -8,32 +8,41 @@
 
 
     <!-- CODELAB: Add link rel manifest -->
-<link rel="manifest" href="/manifest.json">
+<link rel="manifest" href="manifest.json">
 
 <!-- CODELAB: Add iOS meta tags and icons -->
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="apple-mobile-web-app-title" content="PWA Clima">
-<link rel="apple-touch-icon" href="/images/icons/icon-152x152.png">
+<link rel="apple-touch-icon" href="/images/icons/Icon1.png">
 
 <!-- CODELAB: Add description here -->
-<meta name="description" content="Un simple aplicación meteorológica">
+<meta name="description" content="Un simple aplicaciï¿½n meteorolï¿½gica">
 
 <!-- CODELAB: Add meta theme-color -->
 <meta name="theme-color" content="#2F3BA2" />
-<script> // CODELAB: Register service worker.
+
+
+
+
+
+
+
+<script>
+// CODELAB: Register service worker.
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/Service-worker.js')
+    navigator.serviceWorker.register('service-worker.js')
         .then((reg) => {
           console.log('Service worker registered.', reg);
         });
   });
-}</script>
+}
+
+</script>
 
 <!-- CODELAB: Add the install script here -->
-<script src="/scripts/install.js"></script>
-
+<script src="install.js"></script>
 
 
     <title>themeinthebox.com</title>
